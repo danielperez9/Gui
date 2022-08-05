@@ -1,30 +1,30 @@
-from cProfile import label
-from tkinter import *
-from tkinter import messagebox
-import time
-from tkinter import ttk
+
 import tkinter
+from tkinter import Button,messagebox
 
-#windows size
-window_width=1000
-window_hieght=1000
-#position of label1
-int_pos_x=100
-init_pos_y=100
-#of spaces moving
-mov=10
-#refresh rate of movemnet 
-fresh=0.001
+pantalla=tkinter.Tk()
+pantalla.title('Patalla')
+canv= tkinter.Canvas(pantalla,bg='white', height=500, width=800)
+# must make function fir button before making button
+def click1():
+    messagebox.showwarning("Alert","CONSOLE WILL BE CLOSING")
+    pantalla.destroy()#close Window 
+def click2():
+    from andom import num# calling file to import variables
+    messagebox.showinfo("Hello", num)#printing current date/time
+    messagebox.showinfo("HELLO","hello World")
+#buttons
+#making the button and adding its attributes
+close_btn=Button(pantalla,text="Close", fg='red', command=click1, activebackground='#e32636')
+#brings button to the canvas
+close_btn.pack(side=tkinter.TOP)
 
-def Window_animation():
-    Winodow=Tk()
-    Winodow.title="Practive window"
-    Winodow.geometry(f'{window_width}x{window_hieght}') # fromat of window size
-    return Winodow
+time_btn=Button(pantalla,text='Date', fg='blue',command=click2)
+time_btn.pack(side=tkinter.RIGHT,anchor= tkinter.SW)
+
+Useless_btn=Button(pantalla,text='Useless Button',height=5)
+Useless_btn.pack(anchor= tkinter.CENTER,side=tkinter.RIGHT)
 
 
-def canvas_animatoin(Window):
-    #label=ttk.Label(Window, text='L', font=('Times', 36))
-    canvas=tkinter.Canvas(Window)
-    canvas.configure(bg="White")
-    
+canv.pack()
+pantalla.mainloop()
