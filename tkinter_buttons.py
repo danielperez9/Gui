@@ -82,7 +82,7 @@ label1=Label(pantalla,text= 'Runing.......',font=('Helvetica',36))
 label2=Label(pantalla,text='Please stand by',font=('Helvetica',36))
 
 #imports image file 
-logo=tkinter.PhotoImage(file="Arr.png")
+logo=tkinter.PhotoImage(file="tree.png")
 #sets image to the background 
 limg=Label(pantalla, i=logo)
 limg.pack()
