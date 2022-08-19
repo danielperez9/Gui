@@ -1,0 +1,10 @@
+
+Tk
+{
+    background: "#10d5c2";
+}
+Button
+{
+    foreground: "#141f2a";
+    background: "#a1e7f2";
+}
