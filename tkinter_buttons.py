@@ -9,7 +9,8 @@ from tkinter import *
 from tkinter import Button, Image,messagebox,Label 
 import sys
 
-#creating a new screen 
+#creating a new screen
+#pantalla is screen in spanish
 pantalla=tkinter.Tk()
 #name of the screen
 pantalla.title('Patalla')
