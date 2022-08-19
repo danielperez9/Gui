@@ -1,4 +1,6 @@
-
+# a program of looop within loops to increase the loading time for the GUI
+# the variable  n if increased will increase the range and over all time 
+#when n=50 takes ~2minutes to load but when n=100+ it can take more than 5 minutes
 import sys
 from tkinter import messagebox
 def ED():
@@ -21,6 +23,3 @@ def ED():
         print (number,'E')
     
 ED()
-#https://norsenet.com/resources/
-#https://norse-corp.com/map/ 
-#link click -an
